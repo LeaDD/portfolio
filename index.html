@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
         <title>DDeal Portfolio | Featured Work</title>
     </head>
@@ -14,7 +15,7 @@
         <div class="container">
             <header class="row">
               <div class="col-xs-6 logo">
-                <img class="img-responsive" src="img/awd-crop-1200_large.png" alt="Alchemical web logo.">
+                <img class="img-responsive" src="img/awd-crop-600_medium.png" alt="Alchemical web logo.">
               </div>
               <div class="col-xs-6 col-md-6 nameplate">
                 <h1>David Deal</h1>
@@ -24,23 +25,46 @@
             </header>
             <section class="row">
                 <div class="hero">
-                    <img class="img-responsive center-block" src="img/minis-1200_large.jpg" alt="Image of some primered minis.">
+                    <picture>
+                        <source
+                            srcset="img/minis_lrg-1500_xxlarge.jpg"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="img/minis-1200_xlarge.jpg"
+                            media="(min-width: 998px)">
+                        <img class="img-responsive center-block" src="img/minis-800_large.jpg" alt="Image of some primered minis.">
+                    </picture>
                 </div>
             </section>
             <hr>
             <section class="row featured-box">
                 <div class="col-md-4 col-sm-6">
-                  <img class="img-responsive center-block" src="img/pups-1200_large.jpg" alt="Picture of my two dogs rolling on the floor.">
+                    <picture>
+                        <source
+                            srcset="img/pups_adj-400_small.jpg"
+                            media="(min-width: 768px)">
+                        <img class="img-responsive center-block" src="img/pups_adj-600_medium.jpg" alt="Picture of my two dogs rolling on the floor.">
+                    </picture>
                   <h3>Project 1 Placeholder</h3>
                   <p><a href="http://github.com">Link to project</a></p>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                  <img class="img-responsive center-block" src="img/kb-1200_large.jpg" alt="My deceased Kitty Bot RIP.">
+                    <picture>
+                        <source
+                            srcset="img/kb-400_small.jpg"
+                            media="(min-width: 768px)">
+                        <img class="img-responsive center-block" src="img/kb-600_medium.jpg" alt="My deceased Kitty Bot RIP.">
+                    </picture>
                   <h3>Project 2 Placeholder</h3>
                   <p><a href="http://github.com">Link to project</a></p>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                  <img class="img-responsive center-block" src="img/smashed-car-1200_large.jpg" alt="My crashed car.">
+                    <picture>
+                        <source
+                            srcset="img/smashed-car-400_small.jpg"
+                            media="(min-width: 768px)">
+                        <img class="img-responsive center-block" src="img/smashed-car-600_medium.jpg" alt="My crashed car.">
+                    </picture>
                   <h3>Project 3 Placeholder</h3>
                   <p><a href="http://github.com">Link to project</a></p>
                 </div>
