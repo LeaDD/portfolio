@@ -13,7 +13,9 @@
 
 body {
     font-family: 'Aclonica', sans-serif;
-    background-color: mintcream;
+    /*background-color: green;*/
+    background-image: url('../img/parchment-1500_xxlarge.jpg');
+    background-size: 100%;
 }
 
 header {
